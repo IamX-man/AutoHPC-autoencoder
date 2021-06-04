@@ -50,3 +50,4 @@ Download repository:
 
     $ git clone https://github.com/wdong5/AutoHPC-autoencoder.git
     $ cd  AutoHPC-autoencoder
+    $ python Main.py
