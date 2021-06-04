@@ -12,11 +12,12 @@
 1. [Google Colab Demo](#google-colab-demo)-->
 
 ### Introduction
+We introduce a framework, named Auto-HPCnet, to democratize the usage of NN-based approximation. Auto-HPCnet is the first end-to-end framework that makes past proposals for NN-based approximation practical and disciplined. Auto-HPCnet introduces a workflow to address unique challenges when applying the approximation, such as feature acquisition and meeting the application-specific constraint on computation quality.
 <!--We propose the **Smart**-**P**ower **G**rid **sim**ulation (**Smart-PGsim**): Using Neural Network to AccelerateAC-OPF Power Grid Simulation.
 Smart-PGsim generates **multitask-learning (MTL)** neural network (NN) models to predict the initial values of variables critical to the problem convergence. MTL models allow information sharing when predicting multiple dependent variables while including customized layers to predict individual variables. We show that, to achieve the required accuracy, it is paramount to embed **domain-specific constraints** derived from the specific power-grid components in the MTL model.  Smart-PGsim then employs the predicted initial values as a high-quality initial condition for the power-grid numerical solver (warm start), resulting in both higher performance compared to state-of-the-art solutions.-->
 
 ### Requirements and Dependencies
-<!--check the version requirements of tensorflow GPU https://www.tensorflow.org/install/source#linux>
+check the version requirements of tensorflow GPU https://www.tensorflow.org/install/source#linux>
 - Ubuntu (We test with Ubuntu = 16.04.5 LTS)
 - Python (We test with Python = 3.7 in Anaconda3 = 4.1.1)
 - Cuda & Cudnn (We test with Cuda = 10.0 and Cudnn = 7.6)
@@ -24,7 +25,9 @@ Smart-PGsim generates **multitask-learning (MTL)** neural network (NN) models to
 - NVIDIA GPU (We use TESLA V100(Volta) GPUs, but we support compute_50/52/60/61 devices.))
 
 install anaconda：
-    $ bash Anaconda3-2020.11-Linux-x86_64.sh
+    ```sh 
+    bash Anaconda3-2020.11-Linux-x86_64.sh
+    ```
 create conda env:
     $ conda create -n autoHPC python=3.7
 install tensorflow-gpu
