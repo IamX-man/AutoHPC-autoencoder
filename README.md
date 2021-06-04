@@ -24,13 +24,10 @@ Smart-PGsim generates **multitask-learning (MTL)** neural network (NN) models to
 - NVIDIA GPU (We use TESLA V100(Volta) GPUs, but we support compute_50/52/60/61 devices.))
 
 install anaconda：
-
     $ bash Anaconda3-2020.11-Linux-x86_64.sh
 create conda env:
-
     $ conda create -n autoHPC python=3.7
 install tensorflow-gpu
-
     $ conda install -c anaconda tensorflow-gpu==2.3.0
 set up environment for autokeras:
 
